@@ -57,11 +57,11 @@ order by hire_date desc;
 select emp_no, dept_no
 from dept_emp
 where dept_no = 'd005'
-or dept_no = 'd009'
+or dept_no = 'd009';
 -- where dept_no in('d005', 'd009');
 
 -- like 검색 ex4) employees 테이블에서 1989년에 입사한 직원의 이름, 입사일을 출력  
-select concat(first_name, ' ', last_name) as '이름',
+select concat(first_name,' ', last_name) as '이름',
 		hire_date
 from employees
 where hire_date like '1989%'
